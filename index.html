@@ -6,17 +6,38 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <main class="container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="icons/dashboard.png">
+                <h1>Dashboard</h1>
+            </div>
+            <ul>
+                <li><img src="icons/home.png">Home</li>
+                <li><img src="icons/profile.png"/>Profile</li>
+                <li><img src="icons/messages.png"/>Messages</li>
+                <li><img src="icons/history.png"/>History</li>
+                <li><img src="icons/tasks.png"/>Tasks</li>
+                <li><img src="icons/communities.png"/>Communities</li>
+            </ul>
+            <ul>
+                <li><img src="icons/settings.png">Settings</li>
+                <li><img src="icons/support.png">Support</li>
+                <li><img src="icons/privacy.png">Privacy</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
             <header class="nav">
                 <div class="nav-top">
                     <img src="icons/search.png">
                     <input type="text">
                     <img src="icons/bell.png">
-                    <img src="icons/user.png">
+                    <img src="icons/user-icons/user.png">
                     <p>Morgan Oakley</p>
                 </div>
                 <div class="nav-bottom">
-                    <img src="icons/user-large.png">
+                    <img src="icons/user-icons/user-large.png" class="usr-icon">
                     <div class="welcome">
                         <p>Hi there,<p>
                         <h2>Morgan Oakley (@morgan)</h2>
@@ -27,84 +48,79 @@
                 </div>
             </header>
 
-
-
-            <aside class="sidebar">
-                <div class="sidebar-header">
-                    <img src="icons/dashboard.png">
-                    <h1>Dashboard</h1>
-                </div>
-                <ul>
-                    <li><img src="icons/home.png">Home</li>
-                    <li><img src="icons/profile.png"/>Profile</li>
-                    <li><img src="icons/messages.png"/>Messages</li>
-                    <li><img src="icons/history.png"/>History</li>
-                    <li><img src="icons/tasks.png"/>Tasks</li>
-                    <li><img src="icons/communities.png"/>Communities</li>
-                </ul>
-                <ul>
-                    <li><img src="icons/settings.png">Settings</li>
-                    <li><img src="icons/support.png">Support</li>
-                    <li><img src="icons/privacy.png">Privacy</li>
-                </ul>
-            </aside>
-            <section class="middle-section">
-                <article class="projects">
+            <section class="main-content-bottom-section">
+                <section class="bottom-left-section">
                     <h2>Your projects</h2>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                    <div class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>Information about project</p>
-                    </div>
-                </article>
-            </section>
-            <section class="right-side">
-                <article class="announcements">
+                    <article class="projects-section">
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                        <div class="card">
+                            <h3>Less Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Information about project</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="bottom-right-section">
                     <h2>Announcements</h2>
-                    <div class="individual-announcement">
-                        <h4>Site Maintenance</h4>
-                        <p>Information about site maintenance</p>
-                    </div>
-                    <div class="individual-announcement">
-                        <h4>Site Maintenance</h4>
-                        <p>Information about site maintenance</p>
-                    </div>
-                    <div class="individual-announcement">
-                        <h4>Site Maintenance</h4>
-                        <p>Information about site maintenance</p>
-                    </div>
-                </article>
-                <article class="trending">
+                    <article class="announcements">
+                        <div class="individual-announcement">
+                            <h4>Site Maintenance</h4>
+                            <p>Information about site maintenance</p>
+                        </div>
+                        <hr>
+                        <div class="individual-announcement">
+                            <h4>Community Share Day</h4>
+                            <p>Information about site maintenance</p>
+                        </div>
+                        <hr>
+                        <div class="individual-announcement">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Information about site maintenance</p>
+                        </div>
+                    </article>
                     <h2>Trending</h2>
-                    <div class="trending-item">
-                        <p>trending info</p>
-                    </div>
-                    <div class="trending-item">
-                        <p>trending info</p>
-                    </div>
-                    <div class="trending-item">
-                        <p>trending info</p>
-                    </div>
-                </article>
+                    <article class="trending">
+                        <div class="trending-item">
+                            <img src="icons/user-icons/bug.png">
+                            <div class="user-info">
+                                <h5>@beetle</h5>
+                                <p>Tiny Little Insect</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="icons/user-icons/chess.png">
+                            <div class="user-info">
+                                <h5>@verysmort</h5>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="icons/user-icons/cat.png">
+                            <div class="user-info">
+                                <h5>@mrow</h5>
+                                <p>A Hungry Cat</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
             </section>
         </main>
     </body>
