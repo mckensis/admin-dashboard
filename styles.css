@@ -6,8 +6,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: 280px 1fr;
 }
@@ -24,20 +22,23 @@ body {
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-rows: 210px 1fr;
+    grid-template-rows: max-content 1fr;
     background-color: #f0fdf4;
     gap: 1rem;
+    max-width: calc(100vw - 280px);
+    max-height: 100vh;
 }
 
 .nav {
     display: grid;
     grid-auto-flow: row;
+    grid-auto-rows: max-content;
     grid-column: 1 / -1;
-    grid-template-rows: 1fr 2fr;
     background-color: #fff;
     box-shadow: 1rem 0rem 2rem #d1fae5;
     padding-right: 5rem;
     padding-left: 2rem;
+    padding-bottom: 1rem;
 }
 
 .usr-icon {
@@ -59,6 +60,7 @@ body {
 .bottom-left-section {
     display: grid;
     grid-auto-flow: row;
+    grid-row: 1;
     grid-template-rows: max-content 1fr;
     margin-left: 2rem;
 }
@@ -73,26 +75,35 @@ body {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    grid-template-rows: max-content max-content max-content 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-flow: row;
 }
 
 .projects-section {
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
     gap: 2rem;
-    grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .card {
     border-left: 1rem solid #047857;
-    padding-left: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 2rem #d1fae5;
     background-color: #fff;
+    display: grid;
 }
+
+.icons-div {
+    place-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
 
 .card h3 {
     font-size: 1.5rem;
@@ -103,14 +114,13 @@ body {
     font-size: 1.3rem;
 }
 
-.announcements {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+.trending-main-section {
+    align-self: end;
 }
 
-.announcements,
-.trending {
+.announcements-sub-section,
+.trending-sub-section {
+    padding: 1rem;
     background-color: #fff;
     border-radius: 1rem;
 }
@@ -131,8 +141,7 @@ body {
     grid-auto-rows: min-content;
     gap: 2rem;
     place-items: center;
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding: 0.25rem;
 }
 
 .user-info h5 {
