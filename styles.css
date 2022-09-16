@@ -125,10 +125,15 @@ body {
     border-radius: 1rem;
 }
 
+.announcements-sub-section {
+    padding: 2rem;
+}
+
 .individual-announcement {
     display: grid;
     grid-auto-rows: 1fr 1fr;
     place-items: center;
+    font-size: 1rem;
 }
 
 .individual-announcement h4 {
@@ -237,7 +242,7 @@ body {
 }
 
 hr {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     width: 75%;
     border: 1px solid #10b981;
     border-radius: 1rem;
